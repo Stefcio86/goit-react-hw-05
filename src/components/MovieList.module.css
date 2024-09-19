@@ -1,20 +1,21 @@
 .list {
-    list-style: none;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-  }
-  
-  .item {
-    background-color: #f4f4f4;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-    transition: transform 0.3s;
-  }
-  
-  .item:hover {
-    transform: scale(1.05);
-  }
-  
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.item {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden; 
+}
+
+.item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}

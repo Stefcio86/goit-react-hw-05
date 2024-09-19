@@ -17,7 +17,7 @@ const MovieCast = () => {
           `https://api.themoviedb.org/3/movie/${movieId}/credits`,
           {
             headers: {
-              Authorization: 'Bearer f0eb757dd6f1507832d47adb8c80e05b',
+              Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkMThiZWU5ZjRiYjVkNjFkZDUwNTAyMWM2Mzk3ODczZiIsIm5iZiI6MTcyNjc3MjcxNS45NzY2ODYsInN1YiI6IjY2ZTliMWE4NTE2OGE4OTZlMTFlZDYxMCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.3gKuqEm-iEeBV354T5FzZWJpv4FHDDtPu2dwL0vtCIo',
             },
           }
         );
@@ -28,9 +28,9 @@ const MovieCast = () => {
         } else {
           setError('No cast information available.');
         }
-      // eslint-disable-next-line no-unused-vars
-      } catch (error) {
-        setError('Failed to fetch cast.');
+      } catch (err) {
+        setError('Failed to find cast.');
+        console.error(err); 
       } finally {
         setLoading(false);
       }
@@ -43,7 +43,7 @@ const MovieCast = () => {
 
   return (
     <div className={styles.container}>
-      {error && <div className={styles.error}>{error}</div>} {/* Wyświetl błąd */}
+      {error && <div className={styles.error}>{error}</div>}
       <ul className={styles.list}>
         {cast.map(({ cast_id, name, character, profile_path }) => (
           <li key={cast_id} className={styles.item}>

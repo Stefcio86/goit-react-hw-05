@@ -4,11 +4,13 @@ import MoviesPage from './pages/MoviesPage';
 import MovieDetailsPage from './pages/MovieDetailsPage';
 import MovieCast from './components/MovieCast';
 import MovieReviews from './components/MovieReviews';
-import NotFoundPage from './pages/NotFoundPage'; 
+import NotFoundPage from './pages/NotFoundPage';
+import Navigation from './components/Navigation'; 
 
 const App = () => {
     return (
         <Router>
+            <Navigation /> 
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/movies" element={<MoviesPage />} />

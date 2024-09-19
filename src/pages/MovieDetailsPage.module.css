@@ -1,28 +1,55 @@
 
 .container {
-    padding: 20px;
-  }
-  
-  .title {
-    font-size: 2rem;
-    font-weight: bold;
-  }
-  
-  .overview {
-    margin-top: 10px;
-  }
-  
-  .links {
-    margin-top: 15px;
-  }
-  
-  .link {
-    margin-right: 10px;
-    text-decoration: none;
-    color: blue;
-  }
-  
-  .link:hover {
-    text-decoration: underline;
-  }
-  
+  padding: 20px;
+}
+
+.backLink {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.movieDetails {
+  display: flex;
+  gap: 20px;
+}
+
+.poster {
+  width: 200px;
+  height: auto;
+}
+
+.details {
+  flex: 1;
+}
+
+.title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.overview {
+  margin: 20px 0;
+}
+
+.genres {
+  font-style: italic;
+}
+
+.links {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px; 
+}
+
+.link {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s; 
+}
+
+.activeLink {
+  font-weight: bold;
+  color: #0056b3;
+}

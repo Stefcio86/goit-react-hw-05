@@ -1,16 +1,19 @@
 .nav {
-    padding: 20px;
-    background-color: #333;
-  }
-  
-  .link {
-    margin-right: 20px;
-    color: white;
-    text-decoration: none;
-  }
-  
-  .link.active {
-    font-weight: bold;
-    color: yellow;
-  }
-  
+  padding: 20px;
+  background-color: #333;
+}
+
+.link {
+  margin-right: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.link.active {
+  font-weight: bold;
+  color: blue;
+}
+
+.link:hover {
+  color: lightgray;
+}

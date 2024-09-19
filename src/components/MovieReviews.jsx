@@ -17,14 +17,15 @@ const MovieReviews = () => {
           `https://api.themoviedb.org/3/movie/${movieId}/reviews`,
           {
             headers: {
-              Authorization: 'Bearer f0eb757dd6f1507832d47adb8c80e05b',
+              Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkMThiZWU5ZjRiYjVkNjFkZDUwNTAyMWM2Mzk3ODczZiIsIm5iZiI6MTcyNjc3MjcxNS45NzY2ODYsInN1YiI6IjY2ZTliMWE4NTE2OGE4OTZlMTFlZDYxMCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.3gKuqEm-iEeBV354T5FzZWJpv4FHDDtPu2dwL0vtCIo',
             },
           }
         );
         setReviews(response.data.results);
+        setError(null); 
       // eslint-disable-next-line no-unused-vars
       } catch (error) {
-        setError('Failed to fetch reviews.');
+        setError('Failed to find reviews. Please try again later.');
       } finally {
         setLoading(false);
       }
