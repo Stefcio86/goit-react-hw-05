@@ -1,0 +1,33 @@
+.reviewList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .reviewItem {
+    margin-bottom: 15px;
+  }
+  
+  .reviewAuthor {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .reviewContent {
+    margin: 5px 0;
+  }
+  
+  .loading {
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  .noReviews {
+    font-style: italic;
+    color: #555;
+  }
+  

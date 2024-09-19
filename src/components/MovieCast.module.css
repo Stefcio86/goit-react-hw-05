@@ -1,0 +1,23 @@
+.container {
+    padding: 20px;
+  }
+  
+  .loading {
+    font-size: 18px;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  .list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  

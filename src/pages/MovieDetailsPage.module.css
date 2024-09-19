@@ -1,0 +1,28 @@
+
+.container {
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .overview {
+    margin-top: 10px;
+  }
+  
+  .links {
+    margin-top: 15px;
+  }
+  
+  .link {
+    margin-right: 10px;
+    text-decoration: none;
+    color: blue;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  
